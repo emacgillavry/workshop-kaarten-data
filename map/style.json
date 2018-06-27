@@ -1,0 +1,52 @@
+{
+    "version": 8,
+    "name": "Basiskaart",
+    "glyphs": "./font/{fontstack}/{range}.pbf",
+    "sources": {
+        "debroen": {
+            "type": "raster",
+            "url": "tilejson.json",
+            "tileSize": 256
+        },
+        "buildings": {
+            "type": "vector",
+            "scheme": "tile",
+            "tiles":
+                ["https://vt1.maps.geocoders.nl/buildings/{z}/{x}/{y}.pbf",
+                "https://vt2.maps.geocoders.nl/buildings/{z}/{x}/{y}.pbf",
+                "https://vt3.maps.geocoders.nl/buildings/{z}/{x}/{y}.pbf",
+                "https://vt4.maps.geocoders.nl/buildings/{z}/{x}/{y}.pbf"],
+            "minzoom":8,
+            "maxzoom": 17 
+        }
+    },
+    "layers": [
+        {
+            "id":  "background",
+            "type": "background",
+            "paint": {
+                "background-color":"#ffffff"
+            }
+        },
+        {
+            "id": "simple-tiles",
+            "type": "raster",
+            "source": "debroen",
+            "minzoom": 0,
+            "maxzoom": 18
+        },
+        {
+            "id": "3D-buildings",
+            "type": "fill-extrusion",
+            "source": "buildings",
+            "source-layer" : "buildings",
+            "maxzoom": 20,
+            "minzoom": 13,
+            "paint": {
+                "fill-extrusion-color": "#fff",
+                "fill-extrusion-height": 0,
+                "fill-extrusion-opacity": 0
+            }
+        }
+    ]
+}

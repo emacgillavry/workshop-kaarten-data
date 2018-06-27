@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>Moderne technologie, oude kaarten</title>
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/hicsuntleones.css">
+
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section>
+                    <h1>Moderne technologie, oude kaarten:</h1>
+                    <h2>voorsprong vanuit het verleden</h2>
+                    <h3>Amersfoort, 27 juni 2018</h3>
+                </section>
+                <section>
+                    <h1>Edward Mac Gillavry</h1>
+                </section>
+                <section>
+                    <h1><img src="img/webmapper_logo_tekst.png" style="width: 40%" /></h1>
+                    <h2>What the map can be</h2>
+                    <p>Wij maken interactieve kaarten en datavisualisaties.</p>
+                    <p>Onze expertise is open {source; data; standaarden}.</p>
+                    <p>Onze kracht is het combineren van cartografie, webtechnologie en geo.</p>
+                </section>
+                <section data-background="img/infographic_wide.png"></section>
+                <section data-background="img/droombeek.jpg"></section>
+                <section data-background="img/lostintime.png"></section>
+                <section>
+                    <img src="img/welp.jpg"/>
+                </section>
+                <section>
+                <h1>Hic Sunt Leones</h1>
+                <ul>
+                    <li><a href="https://bertspaan.nl/">Bert Spaan</a></li>
+                    <li><a href="https://www.zandhuis.nl/">Ivo Zandhuis</a></li>
+                    <li><a href="https://www.dreis.nl/">Petra Dreisk&auml;mper</a></li>
+                    <li><a href="http://www.islandsofmeaning.nl/">Menno den Engelse</a></li>
+                    <li><a href="https://webmapper.net/">Edward Mac Gillavry</a></li>
+                </ul>
+                </section>
+                <section data-background="img/jodenadam1941.png" style="width: 100%;"></section>
+                <section data-background="img/tiles-loading.gif" style="width: 100%;">
+                    <h1>Tiles</h1>
+                    <p>256 x 256 pixels</p>
+                    <p>zelfde grid, zelfde projectie</p>
+                    <p class="fragment grow">Kleinere tegels zijn sneller dan 1 grote</p>
+                    <p>Naadloos en snel</p>
+                    <p><q>Slippy maps</q></p>
+                </section>
+                <section data-background="img/citydata-adam.png" style="width: 100%;"></section>
+                <section data-background="img/amsterdamtimemachine-nl.png" style="width: 100%;">
+                </section>
+                <section>
+                    <h1>Tiling Amsterdam</h1>
+                    <ul>
+                        <li class="fragment visible" data-fragment-index="1"><a href="http://amsterdamtimemachine.nl">amsterdamtimemachine.nl</a></li>
+                        <li class="fragment visible" data-fragment-index="2">6 tile sets (1625 &mdash; 1985)</li>
+                        <li class="fragment visible" data-fragment-index="3">Hosted at <a href="https://www.huygens.knaw.nl/?lang=en">Huygens ING</a></li>
+                        <li class="fragment visible" data-fragment-index="4">Freely available</li>
+                        <li class="fragment visible" data-fragment-index="5">Uses de facto XYZ map tiling schema</li>
+                        <li class="fragment visible" data-fragment-index="6">Web Mercator projection</li>
+                    </ul>
+                </section>
+                <section data-background="img/cholera.jpg" style="width: 100%;"></section>
+                <section data-background-iframe="http://kolerekaart.nl" data-background-interactive></section>
+                <section data-background-iframe="https://morphocode.com/location-time-urban-data-visualization/" data-background-interactive></section>
+                <section data-background-iframe="https://apps.webmapper.nl/gebouwen/#15/52.15854/5.38327/0.8/60"></section>
+                <section data-background-iframe="map/index.html" data-background-interactive></section>
+                <section data-background="img/dataplatform.png" style="width: 100%;"></section>
+                <section data-background="img/5-hetvolk-foto.png" style="width: 100%;"></section>
+                <section data-background="img/architectuur-utrechtinvogelvlucht.png" style="width: 100%;"></section>
+                <section>
+                    <h1>Conclusies</h1>
+                    <ul>
+                        <li class="fragment visible" data-fragment-index="1">Erfgoedroutes?</li>
+                        <li class="fragment visible" data-fragment-index="2">Maak de data en API's open</li>
+                        <li class="fragment visible" data-fragment-index="3">Geo-kennis in het heden</a></li>
+                        <li class="fragment visible" data-fragment-index="4">Data uit het verleden</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+        <script>
+            // More info about config & dependencies:
+            // - https://github.com/hakimel/reveal.js#configuration
+            // - https://github.com/hakimel/reveal.js#dependencies
+            Reveal.initialize({
+                history: true,
+                dependencies: [
+                    { src: 'plugin/markdown/marked.js' },
+                    { src: 'plugin/markdown/markdown.js' },
+                    { src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+                ]
+            });
+
+        </script>
+    </body>
+</html>

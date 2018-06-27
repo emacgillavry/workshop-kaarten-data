@@ -1,0 +1,14 @@
+{
+    "tilejson": "1.0.0",
+    "name": "Gerrit de Broen",
+    "description": "Kaart van Gerrit de Broen",
+    "version": "1.0.0",
+    "attribution":  "Kaartgegevens: <a href='https://amsterdamtimemachine.nl'>De Broen</a>",
+    "scheme": "xyz",
+    "tiles": [
+        "https://images.huygens.knaw.nl/webmapper/maps/debroen/{z}/{x}/{y}.png"
+    ],
+    "minzoom": 0,
+    "maxzoom": 18,
+    "bounds": [ -180, -85, 180, 85 ]
+}
